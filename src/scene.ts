@@ -117,7 +117,7 @@ gltfLoader.load(
   "./models/homer/scene.gltf",
   (gltf) => {
     homer = gltf.scene;
-    homer.position.y -= 0.0082;
+    homer.position.y -= 0.00812;
     homer.traverse((child) => {
       if (child instanceof THREE.Mesh) {
         child.castShadow = true;
