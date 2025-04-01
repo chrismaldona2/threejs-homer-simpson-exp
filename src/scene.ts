@@ -117,6 +117,7 @@ gltfLoader.load(
   "./models/homer/scene.gltf",
   (gltf) => {
     homer = gltf.scene;
+    homer.position.y -= 0.0082;
     homer.traverse((child) => {
       if (child instanceof THREE.Mesh) {
         child.castShadow = true;
@@ -177,7 +178,7 @@ mtlLoader.load(
       "./models/ebola-cola/big_gulp_of_pop_objShape.obj",
       (obj) => {
         obj.scale.setScalar(0.5);
-        obj.position.set(-1, 0, 0.5);
+        obj.position.set(-1, -0.01, 0.5);
         obj.children[0].castShadow = true;
         scene.add(obj);
       },
