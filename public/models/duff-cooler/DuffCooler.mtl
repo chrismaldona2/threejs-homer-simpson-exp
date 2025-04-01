@@ -1,0 +1,3 @@
+newmtl beer_cooler_m
+Kd 1 1 1
+map_Kd beer_cooler_bmp.png
